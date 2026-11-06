@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Homebase</AssemblyName>
+    <RootNamespace>Homebase</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4314.35" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Homebase.Tests/**/*.cs" />
+    <Compile Remove="Homebase.Launcher/**/*.cs" />
+    <Compile Remove="Homebase.Launcher.Tests/**/*.cs" />
+    <Compile Include="Homebase.Launcher/LauncherEntry.cs" Link="Launcher/LauncherEntry.cs" />
+    <Compile Include="Homebase.Launcher/AppDiscovery.cs" Link="Launcher/AppDiscovery.cs" />
+    <Compile Include="Homebase.Launcher/AppLauncher.cs" Link="Launcher/AppLauncher.cs" />
+  </ItemGroup>
+</Project>

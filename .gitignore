@@ -1,0 +1,7 @@
+bin/
+obj/
+publish/
+release/
+Homebase-win-x64.zip
+*.user
+*.suo
