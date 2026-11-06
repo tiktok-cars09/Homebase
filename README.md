@@ -21,9 +21,6 @@ for it. Windows 11 usually already has this runtime.
 The original media home screen is currently a Windows x64 app. Its media pages
 are provided by the services themselves: you need your own accounts, and each
 service controls whether sign-in and playback work inside an embedded browser.
-The separate launcher supports Windows, Linux, and macOS. On ChromeOS, run it
-inside the Linux development environment; ChromeOS does not run this desktop app
-natively.
 
 ## What works
 
